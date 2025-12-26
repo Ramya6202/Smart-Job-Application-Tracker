@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Job Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart Job Application Tracker</h1>
+
+    <a href="/add" class="btn">➕ Add New Job</a>
+
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job.Company }}</td>
+            <td>{{ job.Role }}</td>
+            <td>{{ job.Date }}</td>
+            <td>
+                <span class="status applied">
+                    {{ job.Status }}
+                </span>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>
