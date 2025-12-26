@@ -147,9 +147,3 @@ Status: Applied
 ---
 
 
-* Create **project PPT**
-* Write **viva / interview answers**
-* Help you **deploy this online**
-* Add **advanced features**
-
-Just tell me 😊
